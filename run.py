@@ -20,13 +20,16 @@ def decode(str):
 		power = len(str) - 1
 		decoding += index * (math.pow(base, power))
 		str = str[1:]
-	return int(decoding);
+	return int(decoding)
+
+
 @click.command()
 @click.option('--link', prompt='Link to Shorten')
 def shorten(link):
-	print("d")
+	print(encode(10002))
+	print(decode('Tgmc'))
+	print(decode(''))
+
 if __name__ == '__main__':
-    print(encode(10002))
-    print(decode('Tgmc'))
-    print(decode(''))
+   shorten()
   
